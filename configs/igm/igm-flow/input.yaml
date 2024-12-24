@@ -1,0 +1,24 @@
+on_issue:
+  - name: "status"
+    key: "status"
+    type: "select"
+    defaultValue: "SETTLED"
+  
+    defaultOptions:
+      - key: "PROCESSING"
+        value: "PROCESSING"
+      - key: "OPEN"
+        value: "OPEN"
+
+    errorText: "Please select a field"
+    required: false
+    summary: This attribute refers to status of the settlement.
+  
+  - name: "reference_no"
+    key: "reference_no"
+    type: "text"
+    errorText: "reference_no is required"
+    defaultValue: "1238683618634"
+    required: true
+    summary: This attribute is reference_no.
+  
